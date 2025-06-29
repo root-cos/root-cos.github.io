@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --sidebar-background: 210 40% 96.1%;
+    --sidebar-foreground: 222.2 47.4% 11.2%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --sidebar-background: 217.2 32.6% 17.5%;
+    --sidebar-foreground: 210 40% 98%;
+  }
+}
+
+body {
+  @apply bg-background text-foreground;
+}

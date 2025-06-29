@@ -1,0 +1,25 @@
+@layer components {
+  /* Animation for button hover states */
+  .btn-hover-effect {
+    @apply transition-transform duration-150 ease-in-out hover:scale-[1.03] active:scale-[0.98];
+  }
+
+  /* Special focus state for accessibility */
+  .btn-focus {
+    @apply focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none;
+  }
+
+  /* Loading state spinner */
+  .btn-spinner {
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
